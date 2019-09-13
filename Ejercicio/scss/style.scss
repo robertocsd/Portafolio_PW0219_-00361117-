@@ -1,0 +1,30 @@
+@mixin firstButtons {
+        align-self: flex-end;
+}
+@mixin cuerpoFlex{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+   justify-content: space-between;
+
+}
+.cuerpo{
+    @include cuerpoFlex();
+    .but{
+        @include firstButtons();
+    }
+    h1{
+        align-self: center;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    .imagen{
+        display: flex;
+        
+        align-self: center;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+}
+
+

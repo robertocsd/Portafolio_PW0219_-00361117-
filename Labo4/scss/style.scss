@@ -1,0 +1,19 @@
+$bgColor: pink ; 
+$secondColor: red;
+$borderColor: #111;
+$borderStandar: 1px solid $borderColor;
+$fontColor: white;
+$marginSTD: 8px;
+@import "componentes/variables";
+@import "componentes/mixins";
+section{
+    background-color: $borderStandar;
+    border: $borderStandar;
+    width: 100%;
+    height: 100vh;
+    @include flexStandar(row, wrap ,center ,center );
+    p{
+        color: $fontColor;
+        @include space-std($marginSTD);
+    }
+}

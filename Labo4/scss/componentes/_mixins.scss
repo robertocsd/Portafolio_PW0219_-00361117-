@@ -1,0 +1,17 @@
+@mixin flex-std {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin space-std($value) {
+    margin: $value;
+    padding: $value;
+    
+}
+@mixin flexStandar($direction,$wrap,$m_align,$t_align){
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $m_align;
+    align-items: $t_align;
+}
