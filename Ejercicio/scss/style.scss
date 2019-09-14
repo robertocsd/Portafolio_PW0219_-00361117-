@@ -8,22 +8,35 @@
    justify-content: space-between;
 
 }
+@mixin margins($left, $right){
+    margin-left: $left;
+    margin-right: $right;
+}
 .cuerpo{
     @include cuerpoFlex();
     .but{
         @include firstButtons();
     }
+    background-color: rgb(187, 131, 179);
+    .medio{
+        display: flex;
+        flex-flow: column wrap;
+       
+    }
     h1{
         align-self: center;
-        margin-left: 50%;
-        margin-right: 50%;
+    }
+    hr{
+            @include margins(15%,15%);
     }
     .imagen{
-        display: flex;
-        
         align-self: center;
-        margin-left: 50%;
-        margin-right: 50%;
+        justify-self: center;
+        @include margins(5%,5%)
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
